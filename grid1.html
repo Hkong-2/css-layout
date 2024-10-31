@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-rows: auto auto auto 1fr auto;
+    grid-template-columns: 1fr 1fr;
+    min-height: 100vh;
+}
+
+.header {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.logo {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: left;
+    
+}
+
+.navigation {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: left;
+}
+
+.banner {
+    grid-column: 1 / 3;
+    background-color: #ddd;
+    padding: 40px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro {
+    grid-column: 1 / 3;
+    background-color: #ddd;
+    padding: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.box-container {
+    grid-column: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px; 
+    margin-bottom: 20px; 
+    padding: 0 20px;
+}
+
+.box {
+    background-color: #ddd;
+    padding: 50px;
+    text-align: center;
+}
+
+.footer {
+    grid-column: 1 / 3;
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="logo">Logo</div>
+            <nav class="navigation">Navigation</nav>
+        </header>
+
+        <div class="banner">Header / Banner</div>
+        <div class="intro">Intro Text Area</div>
+
+        <div class="box-container">
+            <div class="box">Box 1</div>
+            <div class="box">Box 2</div>
+            <div class="box">Box 3</div>
+        </div>
+
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

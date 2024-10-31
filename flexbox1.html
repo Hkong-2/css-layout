@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Layout</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ddd;
+}
+
+.logo {
+    background-color: #ddd;
+    padding: 20px;
+    width: 50%;
+    text-align: left;
+}
+
+.navigation {
+    background-color: #ddd;
+    padding: 20px;
+    width: 50%;
+    text-align: left;
+}
+
+.banner {
+    background-color: #ddd;
+    padding: 50px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro {
+    background-color: #ddd;
+    padding: 30px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.box-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    
+}
+
+.box {
+    flex: 1;
+    background-color: #ddd;
+    padding: 140px;
+    margin: 0 10px; 
+    text-align: center;
+}
+
+.box:first-child {
+    margin-left: 0; 
+}
+
+.box:last-child {
+    margin-right: 0; 
+}
+
+.footer {
+    background-color: #ddd;
+    padding: 20px;
+    text-align: center;
+}
+
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <header class="header">
+                <div class="logo">Logo</div>
+                <nav class="navigation">Navigation</nav>
+            </header>
+
+            <div class="banner">Header / Banner</div>
+            <div class="intro">Intro Text Area</div>
+
+            <div class="box-container">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+            </div>
+        </div>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

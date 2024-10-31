@@ -1,0 +1,93 @@
+body {
+   
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: none;
+    padding: 1rem 3rem; 
+    width: 90%;         
+    max-width: 700px; 
+    position: relative;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.background-label {
+    position: absolute;
+    font-size: 1.5rem;
+    color: gray;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    transform-origin: center;
+}
+
+.background-label.left {
+    left: 0; 
+    top: 30%;  
+    transform: rotate(180deg); 
+}
+
+.background-label.right {
+    right: 0; 
+    top: 30%; 
+    transform: rotate(180deg); 
+}
+
+ .navigation, .header-banner, .footer {
+    background-color: lightgray;
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+    clear: both;
+}
+
+header.logo{
+    background-color: lightgray;
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    text-align: left;
+    width: 100%;
+    box-sizing: border-box;
+    float: left;
+    clear: both;
+}
+
+.main-content {
+    overflow: hidden;
+    width: 100%;
+}
+
+.sidebar {
+    width: 25%;
+    min-height: 400px;
+    background-color: lightgray;
+    font-weight: bold;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 200px;
+    margin-right: 1%;
+    margin-bottom: 0.5rem;
+}
+
+.body-area {
+    width: 74%;
+    min-height: 400px;
+    background-color: lightgray;
+    font-weight: bold;
+    float: left;
+    box-sizing: border-box;
+    text-align: center;
+    padding-top: 200px;
+    margin-bottom: 0.5rem;
+}
